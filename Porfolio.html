@@ -6,77 +6,167 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <title>Porfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="./Assets/appleple-modal-video-78d211f/css/modal-video.min.css">
+ 
 </head>
 <body>
+    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
     <section class="grid">
         <div class="grid-item1" >
             <h1>My Portfolio</h1>
         </div>
-        <div  class="grid-item2">
-                <ul>
-                    <li><a href="#">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact me</a></li>
+        <div  class="grid-item2" id="grid-item2" >
+                <ul id="show">
+                    <li><a href="#section1">About Me</a></li>
+                    <li><a href="#section3">Projects</a></li>
+                    <li><a href="#footer">Contact me</a></li>
                 </ul>
+               
         </div>
+        <div class="grid-item3" id="bar">
+            <a class="fa fa-bars" id="icon" area-hidden="true" href="#"></a>
+        </div>
+       
      
     </section>
-    <section class="section2">
+    <section id="section1" class="section2">
         <div class="item1">
-            <h2>Hi! I am Mahathir Mohamed</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente ipsa iste id doloribus deleniti quasi vel, alias est eum aperiam at similique harum obcaecati. Porro esse beatae in aliquam repellat!
-            </p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum voluptatem eveniet! Dolor, nisi qui assumenda labore nemo voluptas ex porro? Rerum totam repellat ea numquam cupiditate. Hic, eveniet earum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cum voluptatem eveniet! Dolor, nisi qui assumenda labore
-                nemo voluptas ex porro? Rerum totam repellat ea numquam cupiditate. Hic, eveniet earum?</p>
-        </div>
+            <div style="display:flex;align-items:center" class="text">
+                <h2 class="firsth1">Hi!! I am</h2>
+                <h2 style="margin-left:5px;color:blue" class="geeks secondh1" ></h2>
+            </div>
+            <h4>My Passion is to Build an Enthusiastic As Well As User-Friendly Applications. I always
+            concentrate on how to improve the quality of our code as well as the User Experience. my goal is to provide clean code
+            and also code that can solve all kinds of constraints. I am sure I will improve our company's performance with my smart
+            work.</h4>
+            <div style="justify-content:space-between;">
+                <h2 style="color:rgb(14, 76, 247);text-decoration:underline">Tech Stacks</h2>
+                <img src="./Assets/python.png" style="width:50px;height:50px">
+                <img src="./Assets/java-script.png" style="width:50px;height:50px">
+                <img src="./Assets/html.png" style="width:50px;height:50px">
+                <img src="./Assets/css-3.png" style="width:50px;height:50px">
+                <img src="./Assets/physics.png" style="width:50px;height:50px">
+                <img src="./Assets/nodejs.png" style="width:50px;height:50px">
+                <img src="./Assets/java.png" style="width:50px;height:50px">
+                <img src="./Assets/letter-c.png" style="width:50px;height:50px">
+            </div>
+             </div>
         <div class="item2">
             <div style="border:10px solid white;padding:10px;border-radius:5px;">
-                <img style="width:300px;height:280px;border-radius:20px;"src="./Assets/IMG_20210209_203110.jpg" alt="my image">
+                <img class="image" style="width:300px;height:280px;border-radius:20px;"src="./Assets/IMG_20210215_114702_486.jpg" alt="my image">
                 <div class="social-media">
-                    <a class="fa fa-instagram" href="#"></a>
-                    <a class="fa fa-github" href="#"></a>
-                    <a class="fa fa-linkedin" href="#"></a>
+                        <a class="fa fa-envelope" href="mailto:mahathirmohamed791@gmail.com"></a>
+                    <a class="fa fa-github" href="https://github.com/mahathir-mohamed"></a>
+                    <a class="fa fa-linkedin" href="https://www.linkedin.com/in/mahathir-mohamed-81ab54242/"></a>
                 </div>
             </div>  
            
         </div>
     </section>
-    <section class="section3">
+    <section id="section3" class="section3">
         <h1>My Projects</h1>
         <div class="section3grid" >
             <div>
-                <a href="#">
-                <img src="./Assets/ali-dadras-HyOmenBobfU-unsplash.jpg" alt="project1">
+                <a href="https://github.com/mahathir-mohamed/NoteTakingApp">
+                <img src="./Assets/notepad.jpg" alt="project1">
                 <h3>Note Taking Application</h3>
-                <p>I did this project in tech stack such as React Native,AsynStorage.</p>
+                <p>In this note-taking application, I include features such as creating new notes using plus icon, and also users can able
+                to edit the notes which they were already written also it includes the feature search operation which could show every
+                note which was related to our search query and also it has a delete option so that user can all four operations such as
+                Create, Read, Delete and Update. these features are applied by using AsyncStorage Feature in React Native. so that even
+                though the user came out of the application the notes they wrote are saved forever until delete it.</p>
+                <a href="https://github.com/mahathir-mohamed/NoteTakingApp" class="fa fa-github code">View Code</a>
                 </a>
+                <a href="https://github.com/mahathir-mohamed/NoteTakingApp" class="fa fa-youtube code js-modal-btn"
+                    data-video-id="BC7eFGDQ1CY">View demo</a>
+                </div>
+               
+            <div>
+                <a href="https://github.com/mahathir-mohamed/Tic-Tac-Toe">
+                    <img src="./Assets/tic tac toe.jpg"alt="project1">
+                    <h3>Tic Tac Toe (Game)</h3>
+                    <p>I did this application by using React Native. this game contains features such as multiplayer as well as a single player who can be played with a computer bot also in the future I am going to implement the Artificial Intelligence(minimax) algorithm which will be a more challenging task for a user to win against a computer bot.</p>
+                    <a href="https://github.com/mahathir-mohamed/Tic-Tac-Toe" class="fa fa-github code">View Code</a>
+                </a>
+                <a href="https://github.com/mahathir-mohamed/NoteTakingApp" class="fa fa-youtube code js-modal-btn"
+                    data-video-id="2GrS1uCRti8">View demo</a>
             </div>
             <div>
-                <a href="#">
-                    <img src="./Assets/ali-dadras-HyOmenBobfU-unsplash.jpg" alt="project1">
-                    <h3>Note Taking Application</h3>
-                    <p>I did this project in tech stack such as React Native,AsynStorage.</p>
+                <a href="https://github.com/mahathir-mohamed/NewsApplication">
+                    <img src="./Assets/news.jpg" alt="project1">
+                    <h3>News Application</h3>
+                    <p>In this News Application, I include a feature that users can view current news according to their category of interest
+                    this application includes categories such as Technology, Politics, and Entertainment, and also it provides news
+                    according to the country we are specified. this application uses third-party new API services. I use Axios to fetch this
+                    API and use it in my application. so that whenever the API update then my application shows the data according to that.</p>
+                    <a href="https://github.com/mahathir-mohamed/NewsApplication" class="fa fa-github code">View Code</a>
                 </a>
+                <!-- <a href="https://github.com/mahathir-mohamed/NoteTakingApp" class="fa fa-youtube code js-modal-btn"
+                    data-video-id="7-sE2-ZIz44">View demo</a> -->
             </div>
             <div>
-                <a href="#">
-                    <img src="./Assets/ali-dadras-HyOmenBobfU-unsplash.jpg" alt="project1">
-                    <h3>Note Taking Application</h3>
-                    <p>I did this project in tech stack such as React Native,AsynStorage.</p>
+                <a href="https://github.com/mahathir-mohamed/Blog-Website-Using-Node-js">
+                    <img src="./Assets/kenny-eliason-3GZNPBLImWc-unsplash.jpg" alt="project1">
+                    <h3>Blog Application</h3>
+                    <p>I use Nodejs and MongoDB database to develop this application(website).it includes features such as the user can able
+                    create the Blog with a title, image, and description. so that users create the blog using this feature and also user can
+                    edit, delete and update the blog according to their needs. the user-created stored in the MongoDB database. so that
+                    users can retrieve it whenever they need it. this application also has cookies features so that whenever a user login to
+                    the application cookie store the JWT token so that the user can be logged in until their token get expired even though
+                    they came out of the browser.</p>
+                    <a href="https://github.com/mahathir-mohamed/Blog-Website-Using-Node-js" class="fa fa-github code">View Code</a>
                 </a>
+                <!-- <a href="https://github.com/mahathir-mohamed/NoteTakingApp" class="fa fa-youtube code js-modal-btn"
+                    data-video-id="7-sE2-ZIz44">View demo</a> -->
             </div>
-            <div>
-                <a href="#">
-                    <img src="./Assets/ali-dadras-HyOmenBobfU-unsplash.jpg" alt="project1">
-                    <h3>Note Taking Application</h3>
-                    <p>I did this project in tech stack such as React Native,AsynStorage.</p>
-                </a>
-            </div>
-
         </div>
     </section>
-    <section class="footer">
+    <section class="footer" id="footer">
+        <div style="  display: flex;
+    align-items: center;
+    justify-content: center;">
+            <h3>Email: </h3>
+            <h3 style="margin-left:5px"><a style="color:rgb(255, 45, 174)" href="mailto:mahathirmohamed791@gmail.com">mahathirmohamed791@gmail.com</a></h3>
+        </div> 
+        <div style="  display: flex;
+    align-items: center;
+    justify-content: center;">
+            <h3>Designed by</h3>
+            <h3 style="margin-left:5px"><a style="color:rgb(255, 45, 174)" href="https://www.instagram.com/m_a_h_a_t_h_i_r__day__zzz/">@Mahathir Mohamed</a></h3>
+        </div>
     </section>
+    <script src="porfolio.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./Assets/appleple-modal-video-78d211f/js/jquery-modal-video.js"></script>
+    <script src="typingEffect.js"></script>
+    <script>
+        $(".js-modal-btn").modalVideo();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11">
+    </script>
+    <script>
+        var typed = new Typed(".geeks", {
+            strings: ["Mahathir Mohamed.",
+                "Web Developer.","App Developer."],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true,
+        });
+
+        $(window).scroll(function () {
+                if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+                    $('#return-to-top').fadeIn(200);    // Fade in the arrow
+                } else {
+                    $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+                }
+            });
+            $('#return-to-top').click(function () {      // When arrow is clicked
+                $('body,html').animate({
+                    scrollTop: 0                       // Scroll to top of body
+                }, 50);
+            });
+    </script>
 </body>
 </html>
